@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#proposiciones, #respuestas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.proposicion {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.dropzone {
+    width: 70%;
+    height: 40px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+.draggable {
+    padding: 10px 20px;
+    background-color: #890e89;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: grab;
+    max-width: 5px;
+}
+
+.draggable:hover {
+    background-color: #b00485;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}

@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificación de Proposiciones</title>
+  <link rel="stylesheet" href="Ejercicios_p4_fotocopias_Clasificacion.css">
+  <!-- Dragula CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+<div class="container">
+    <h1>Clasificación de proposiciones I</h1>
+
+  <p>Considerando las características que ves en los recuadros de la parte baja de la pantalla, elige las que mejor describan cada una de las siguientes proposiciones según su cantidad (universal o particular), cualidad (negativa o afirmativa) y valor veritativo (verdadero o falso). Arrástralos al renglón correspondiente.</p>
+  
+  <div id="proposiciones">
+      <div class="proposicion">
+          <p><strong>a.</strong> Todos los gatos son mamíferos</p>
+          <div class="dropzone" data-correct="Universal, Afirmativa, Verdadera"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>b.</strong> Ningún planeta gira alrededor del sol</p>
+          <div class="dropzone" data-correct="Universal, Negativa, Falsa"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>c.</strong> Ningún gato es ovíparo</p>
+          <div class="dropzone" data-correct="Universal, Negativa, Verdadera"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>d.</strong> Todos los elefantes son verdes</p>
+          <div class="dropzone" data-correct="Universal, Afirmativa, Falsa"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>e.</strong> Algunos perros son negros</p>
+          <div class="dropzone" data-correct="Particular, Afirmativa, Verdadera"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>f.</strong> Algunos perros no son negros</p>
+          <div class="dropzone" data-correct="Particular, Negativa, Verdadera"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>g.</strong> Algunos perros no son mamíferos</p>
+          <div class="dropzone" data-correct="Particular, Negativa, Falsa"></div>
+      </div>
+
+      <div class="proposicion">
+          <p><strong>h.</strong> Algunos perros son aves</p>
+          <div class="dropzone" data-correct="Particular, Afirmativa, Falsa"></div>
+      </div>
+  </div>
+
+  <h2>Respuestas</h2>
+  <div id="respuestas">
+      <div class="draggable"><div class=a>Universal</div></div>
+      <div class="draggable"><div class=a>Particular</div></div>
+      <div class="draggable"><div class=aa>Afirmativa</div></div>
+      <div class="draggable"><div class=aa>Negativa</div></div>
+      <div class="draggable"><div class=aaa>Verdadera</div></div>
+      <div class="draggable"><div class=aaa>Falsa</div></div>
+  </div>
+
+  <button onclick="verificar()">Verificar</button>
+  <p id="resultado"></p>
+  </div>
+<a href="../../Pagina%204/Ejercicios_p4_fotocopias_Columnas/Ejercicios_p4_fotocopias_Columnas.html">
+  <button class="but">Siguiente ejercicio</button>
+</a>
+  <a href="../../../Páginas/011Proposicion/Proposicion.html"><button class="butt">Volver a la explicación</button></a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+  <script src="Ejercicios_p4_fotocopias_Clasificacion.js"></script>
+<footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaciona las Proposiciones</title>
+  <link rel="stylesheet" href="Ejercicios_p4_fotocopias_Columnas.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Clasificación de proposiciones II</h1>
+    <p>Escribe el número de la proposición en el espacio entre paréntesis de cada descripción.</p>
+
+    <div class="columns">
+      <div class="column">
+        <h2>Proposiciones</h2>
+        <ul>
+          <li>1. Algunos triángulos tienen sus tres lados iguales</li><br>
+          <li>2. Todos los triángulos tienen tres lados</li><br>
+          <li>3. Algunos triángulos no son equiláteros</li><br>
+          <li>4. Ningún triángulo tiene cuatro lados</li><br>
+          <li>5. Todos los triángulos son equiláteros</li><br>
+          <li>6. Ningún triángulo tiene tres lados</li><br>
+          <li>7. Algunos triángulos tienen cuatro lados</li><br>
+          <li>8. Algunos triángulos no tienen tres lados</li><br>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>Descripciones</h2>
+        <form id="quiz-form">
+          <ul>
+            <li>Particular, afirmativa, falsa ( <input type="text" id="answer-1" maxlength="1"> )</li>
+            <li>Universal, afirmativa, falsa ( <input type="text" id="answer-2" maxlength="1"> )</li>
+            <li>Particular, negativa, falsa ( <input type="text" id="answer-3" maxlength="1"> )</li>
+            <li>Universal, afirmativa, verdadera ( <input type="text" id="answer-4" maxlength="1"> )</li>
+            <li>Universal, negativa, verdadera ( <input type="text" id="answer-5" maxlength="1"> )</li>
+            <li>Particular, afirmativa, verdadera ( <input type="text" id="answer-6" maxlength="1"> )</li>
+            <li>Universal, negativa, falsa ( <input type="text" id="answer-7" maxlength="1"> )</li>
+            <li>Particular, negativa, verdadera ( <input type="text" id="answer-8" maxlength="1"> )</li>
+          </ul>
+          <button type="button" onclick="checkAnswers()"><i class="fas fa-check"></i> Verificar respuestas</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="result"></div>
+  </div>
+<a href="../../Pagina%204/Ejercicios_p4_fotocopias_Clasificación/Ejercicios_p4_fotocopias_Clasificacion.html">
+  <button class="but">Ejercicio anterior</button>
+</a>
+  <a href="../../../Páginas/011Proposicion/Proposicion.html"><button class="butt">Volver a la explicación</button></a>
+
+  <script src="Ejercicios_p4_fotocopias_Columnas.js"></script>
+<footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

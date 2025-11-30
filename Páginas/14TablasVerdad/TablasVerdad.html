@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="TablasVerdad.css">
+
+    <title>Guía de Lógica Proposicional</title>
+</head>
+<body>
+      <header class="main-header">
+    <div class="container-header">
+      <h1>Guía Práctica de Lógica</h1>
+      <nav class="nav-header">
+        <a href="../INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+    <main><h1>Tablas de Verdad.</h1>
+
+        <p>A lo largo de esta guía hemos presentado las tablas de verdad correspondientes a cada uno de los operadores veritativo-funcionales. En esas tablas podemos ver de manera concisa y exacta cómo funciona cada uno de esos operadores. Ese mismo instrumento, las tablas de verdad, podemos emplearlo para el análisis de estructuras mucho más complejas, como las que aparecen en los ejercicios de simbolización antes vistos. Especialmente, son útiles para el análisis lógico de argumentos, pues las tablas de verdad nos permiten ver con claridad en qué condiciones tales argumentos serían verdaderos y en cuáles serían falsos.</p>
+        <p>En esta sección se presentan ejercicios para ensayar la construcción de tablas de verdad.</p>
+        
+        <section><b><i>Elaboración de tablas de verdad I</i></b></section>
+        <p>Para la elaboración de una tabla de verdad, lo primero que hay que hacer es anotar todas las combinaciones de valores de verdad que existen para las proposiciones simples que aparecen en el esquema o proposición compuesta que queremos analizar. Como estamos considerando dos valores de verdad (V y F), si tenemos una sola proposición simple, sólo hay dos posibilidades: o es V, o es F; sin embargo, al ir aumentando el número de proposiciones simples, las posibles combinaciones de valores de verdad se incrementan exponencialmente, pues cada proposición simple que se agregue puede ser V o F y cada una de esas posibilidades se combina con las dos posibilidades que, a su vez, tiene cada una de las otras proposiciones. Así, pues, para calcular el número de posibles combinaciones de valores de verdad de las proposiciones simples involucradas en cada caso, podemos usar la fórmula:</p>
+        <div class="sangriaz">
+            <h1>2<sup>n</sup></h1>
+        </div>
+        <p>donde el “2” vienen a ser los dos posibles valores que tiene cada proposición simple (V y F) y “n” es la potencia a la que debe elevarse ese número, la cual debe corresponder al número de proposiciones simples involucradas: si sólo son dos proposiciones, tenemos 2 al cuadrado (2x2=4), si tenemos 4 proposiciones simples, será 2 a la cuarta potencia (2x2x2x2=16), etc.</p>
+
+        
+<div class="highlight">
+            <p><strong>Para poner en práctica esto último, resuelve el siguiente ejercicio:</strong></p>
+            <div class="btn-container">
+                <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-I/Ejercicio_ElaboracionTablasdeVerdad-I.html">
+    Primer ejercicio
+</a>
+
+        </div>
+        </div>
+
+        <br><br><section><b><i>Elaboración de tablas de verdad II</i></b></section>
+
+        <p>Sabiendo el total de combinaciones de valores de verdad posibles para el esquema lógico que se va a analizar, el siguiente paso es trazar la tabla y plasmar en ella tales combinaciones.</p>
+        <p> Para trazar la tabla, pondremos, además del renglón donde se escribe el esquema lógico a analizar, tantos renglones adicionales como combinaciones de posibles valores de verdad tenga nuestro esquema. Así, por ejemplo, si nuestro esquema lógico tiene dos proposiciones simples, las combinaciones de valores de verdad será de 2<sup>2</sup>, es decir, cuatro renglones, además del renglón donde se expresa el esquema que se está analizando (en este caso: [(p ꓥ q) → p]. En cuanto al número de columnas, lo más práctico es trazar una columna por cada proposición simple y operador que aparezcan en el esquema analizado, como se ve enseguida:</p>
+<div class="senter"><img src="./01.png"></div>
+<p>Notarás que en esta tabla las dos columnas del extremo izquierdo están vacías; eso es porque, además de las columnas exigidas por nuestro esquema, debemos trazar antes de éste las columnas necesarias para escribir todas las combinaciones de valores de verdad que pueden tener las proposiciones simples involucradas en el esquema analizado, como se ve a continuación:</p>
+<div class="senter"><img src="./02.png"></div>
+<p>En esta tabla puedes ver que una manera práctica de escribir el total de combinaciones de valores de verdad es comenzar asignando a la proposición de la columna extrema izquierda el valor “V” en la primera mitad de los renglones y “F” a la otra mitad. Enseguida, a la siguiente proposición simple, asignar el valor “V” a la mitad de la mitad de renglones y “F” a la mitad de la mitad de renglones totales y después repetir este procedimiento hasta terminar todos los renglones de esa columna. En esta tabla, por incluir sólo dos proposiciones simples, las posibles combinaciones de verdad son sólo cuatro, pero el mismo procedimiento es aplicable a cualquier tipo de esquema. Así, por ejemplo, si el esquema incluyera 4 proposiciones simples, el total de posibles combinaciones de valores de verdad sería 2 a la cuarta potencia, es decir: 2x2x2x2=16. En tal caso, en la asignación de valores de verdad, le damos a la primera proposición el valor V en los primeros ocho renglones y F, en los siguientes ocho renglones. A la siguiente proposición, cuatro V y cuatro F, lo cual se repite hasta terminar los renglones de esa columna. A la siguiente proposición damos V a los primeros dos renglones, F al tercero y cuarto renglón, repetimos V en el quinto y sexto renglón, F para el séptimo y octavo, y así hasta terminar esa columna, etc.</p>
+<div class="highlightt">
+            <p><strong>Para poner en práctica lo anterior, resuelve los siguiente ejercicios:</strong></p>
+            <div class="btnn-container">
+                <a class="btnn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-II/Ejercicio_ElaboracionTablasdeVerdad-II.html">
+    Primer ejercicio </a>
+    <a class="btnn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-II/Ejercicio1_ElaboracionTablasdeVerdad-II.html">
+    Segundo ejercicio </a>
+    <a class="btnn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-II/Ejercicio2_ElaboracionTablasdeVerdad-II.html">
+    Tercer ejercicio </a>
+        </div>
+        </div> 
+
+        <br><br><section><b><i>Elaboración de tablas de verdad III</i></b></section>
+<p>Ahora que ya tenemos en el extremo izquierdo de nuestra tabla todas las posibles combinaciones de valores de verdad de las proposiciones simples en el esquema analizado, podemos empezar a resolver cada una de las operaciones del esquema lógico. Un paso previo que puede servir para evitar confusiones (aunque toma más tiempo) es copiar en las columnas correspondientes a las proposiciones simples del esquema los valores que les fueron asignados en el extremo izquierdo de la tabla (donde habíamos escrito todas las posibles combinaciones de valores de verdad); así, por ejemplo, en cada una de las columnas donde en la fórmula o esquema aparezca ‘p’, copiar los valores que le habíamos asignado a ‘p’ en las columnas del extremo izquierdo, y hacer lo mismo con las demás proposiciones simples que aparecen en el esquema por analizar. Después de esto, ya será más fácil resolver cada una de las operaciones, pero ¿por cuál empezar? Aquí será preciso tener en mente la jerarquía de cada operación involucrada para saber en qué orden resolverlas, pues, evidentemente, para resolver las operaciones más importantes es necesario saber antes los valores de las operaciones menos importantes que aquellas relacionan. Así pues, se comienza por resolver las operaciones menos importantes (es decir, las que tienen alcance sólo sobre una parte del esquema total; por ejemplo, sólo sobre un paréntesis) y se procede luego con operaciones mayores. La última operación que se resuelve es la principal, que es la que tiene alcance sobre el esquema entero.</p>
+        <div class="highlighttt">
+            <p><strong>Como práctica, resuelve los siguiente ejercicios:</strong></p>
+            <div class="btnnn-container">
+                <a class="btnnn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-III/Ejercicio_ElaboracionTablasdeVerdad-III.html">
+    Primer ejercicio </a>
+    <a class="btnnn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-III/Ejercicio1_ElaboracionTablasdeVerdad-III.html">
+    Segundo ejercicio </a>
+        </div>
+        </div> 
+        
+        <br><br><section><b><i>Elaboración de tablas de verdad IV</i></b></section>
+            <p>En esta sección pondremos en práctica todo lo aprendido sobre la elaboración de tablas de verdad, de principio a fin. Antes de empezar con los ejercicios, veamos un breve resumen de los pasos a seguir:</p>
+            <ol>
+            <p><li>Localizar todas las proposiciones simples que intervienen en la fórmula o esquema lógico que se quiere analizar con la tabla (no cada aparición de proposición, sino sólo cada proposición distinta; es decir, si en el esquema aparecen sólo p y q, y cada una de ellas aparece 3 veces, el número de proposiciones simples que tiene el esquema es 2, no 6). Ya que sabemos el número de proposiciones simples, podemos calcular el número de renglones que debe contener nuestra tabla si empleamos la fórmula: 2<sup>n</sup> (donde n=número de proposiciones simples que contiene el esquema lógico).</li>
+            <br> <li>Trazar la tabla, poniendo tantos renglones como los haya indicado el resultado de aplicar la fórmula 2<sup>n</sup>. Para las columnas de la tabla, asignar una a cada aparición de proposición simple o de operador que aparezca en el esquema que se analizará y agregar, además, en el extremo izquierdo, tantas columnas como proposiciones simples intervengan en el esquema lógico.</li>
+            <br> <li>Escribir en las columnas del extremo izquierdo todas las posibles combinaciones de valores de verdad de las proposiciones simples que intervienen en el esquema (se sugiere utilizar el procedimiento que expusimos anteriormente, para asegurarse de no omitir ninguna de las combinaciones posibles).</li>
+            <br> <li>Tomando como base los valores asignados a cada proposición simple en el extremo izquierdo de la tabla, repetir esos valores en la columna correspondiente a cada aparición que las proposiciones simples tengan en el esquema analizado.</li>
+            <br><li> Resolver las operaciones que incluye el esquema analizado, comenzando por las “menos importantes”, es decir, las que afectan a menos elementos (tienen menor alcance), y avanzando hacia las más importantes, hasta terminar, por último, con la operación principal del esquema. Recordar que, en términos generales, las operaciones más externas a los paréntesis son más importantes que las más internas; por ejemplo, si una operación está dentro de un paréntesis que, a su vez, está incluido en otro paréntesis, esa operación, por ser “más interna”, es “menos importante” y, por tanto, debe resolverse antes que la que sólo está incluida en un paréntesis. Si se trata de dos operaciones que están ambas fuera de todo paréntesis, o que tienen el mismo nivel de internación dentro de un paréntesis, para saber cuál resolver primero, hay que aplicar el criterio de la jerarquía convencional de operadores, de la que hablamos en esta guía. </li></p>
+                </ol>
+            <p>Teniendo estos puntos en mente (y volviendo a ellos cuantas veces lo necesites), te proponemos resolver los siguientes grupos de ejercicios:</p>
+        
+        <div class="highlight">
+            <p><strong>Como práctica, resuelve los siguiente ejercicios:</strong></p>
+            <div class="btn-container">
+                <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/1Ejercicio_ElaboracionTablasdeVerdad-IV/Ejercicio_ElaboracionTablasdeVerdad-IV.html">
+    1 </a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/2Ejercicio_ElaboracionTablasdeVerdad-V_T-II/Ejercicio_ElaboracionTablasdeVerdad_V_T-II.html">
+    2 </a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/3Ejercicio_ElaboracionTablasdeVerdad-VI_T-III/3Ejercicio_ElaboracionTablasdeVerdad-VI_T-III.html">3</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/4Ejercicio_ElaboracionTablasdeVerdad-VII_T-IV/4Ejercicio_ElaboracionTablasdeVerdad-VII_T-IV.html">4</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/5Ejercicio_ElaboracionTablasdeVerdad-VIII_T-V/5Ejercicio_ElaboracionTablasdeVerdad-VIII_T-V.html">5</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/6Ejercicio_ElaboracionTablasdeVerdad-IX_T-VI/6Ejercicio_ElaboracionTablasdeVerdad-IX_T-VI.html">6</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/7Ejercicio_ElaboracionTablasdeVerdad-X_T-VII/7Ejercicio_ElaboracionTablasdeVerdad-X_T-VII.html">7</a><br>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/8Ejercicio_ElaboracionTablasdeVerdad-XI_T-VIII/8Ejercicio_ElaboracionTablasdeVerdad-XI_T-VIII.html">8</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/9Ejercicio_ElaboracionTablasdeVerdad-XI_T-IX/9Ejercicio_ElaboracionTablasdeVerdad-XI_T-IX.html">9</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/10Ejercicio_ElaboracionTablasdeVerdad-XI_T-X/10Ejercicio_ElaboracionTablasdeVerdad-XI_T-X.html">10</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/11Ejercicio_ElaboraTVerdad_T-XI.html/11Ejercicio_ElaboraTVerdad_T-XI.html">11</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/12Ejercicio_ElaboraTVerdad_T-XII.html/12Ejercicio_ElaboraTVerdad_T-XII.html">12</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/13Ejercicio_ElaboraTVerdad_T-XIII/13Ejercicio_ElaboraTVerdad_T-XIII.html">13</a>
+    <a class="btn" href="../../Ejercicios hojas/Elaboracion/Ejercicio_ElaboracionTablasdeVerdad-IV/14Ejercicio_ElaboraTVerdad_T-XIV/14Ejercicio_ElaboraTVerdad_T-XIV.html">14</a>
+        </div>
+        </div> 
+        
+            <div class="flechas">
+    <a href="../13EjerciciosSimbolizacion/EjerciciosSimbolizacion.html">
+        <img src="../assets/flizq.png" width="50" alt="Izquierda">
+    </a>
+    <a href="../15Consideraciones/consideraciones.html">
+        <img src="../assets/flder.png" width="50" alt="Der">
+    </a>
+    <!-- <a href="../14TablasVerdad/TablasVerdad.html">
+        <img src="../assets/flder.png" width="50" alt="Derecha">
+    </a> -->
+</div>
+
+       
+    </main>
+    <footer class="footer">
+      <img src="../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

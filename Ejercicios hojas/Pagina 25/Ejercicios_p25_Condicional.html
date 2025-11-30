@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El condicional o implicación material</title>
+    <link rel="stylesheet" href="Ejercicios_p25_Condicional.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+    <h1>El condicional o implicación material</h1>
+    
+
+    <section id="parte1">
+        <h3>Considerando que:	 <i>p=Juan estudió</i> y  <i>q= Juan aprobó el examen</i></h3>
+        <p>a) Marca las casillas de los enunciados que podrían simbolizarse: p → q  </p>
+        <form id="form-parte1">
+
+            <label><input type="checkbox" value="1"> En caso de que Juan haya estudiado, aprobó el examen. </label><br>
+            <label><input type="checkbox" value="2"> Juan aprobó el examen, siempre y cuando haya estudiado.</label><br>
+            <label><input type="checkbox" value="3"> Suponiendo que Juan haya estudiado, aprobó el examen.</label><br>
+            <label><input type="checkbox" value="4"> No es verdad que si Juan estudió, entonces aprobó el examen.</label><br>
+            <label><input type="checkbox" value="5"> Si Juan estudió, entonces aprobó el examen.</label><br>
+            <label><input type="checkbox" value="6"> Juan estudió y aprobó el examen.</label><br>
+            <label><input type="checkbox" value="7"> Suponiendo que Juan estudió, entonces no es cierto que aprobó el examen.</label><br>
+            <label><input type="checkbox" value="8"> Suponiendo que Juan aprobó el examen, entonces estudió.</label><br>
+            <label><input type="checkbox" value="9"> Si es verdad que Juan estudió, aprobó el examen.</label><br>
+            <label><input type="checkbox" value="10"> Juan estudió, entonces aprobó el examen.</label><br>
+            <label><input type="checkbox" value="11"> En el supuesto de que Juan haya estudiado, entonces aprobó el examen.</label><br>
+
+            
+        </form>
+        <button onclick="verificarParte1()">Verificar respuestas</button>
+        <p id="resultado-parte1"></p>
+    </section>
+
+    <section id="parte2">
+        <h3>Suponiendo que en la realidad Juan estudió y Juan aprobó el examen y que <i>p=Juan estudió</i> y  <i>q= Juan aprobó el examen</i>, ¿cuáles serían los valores veritativos de las siguientes proposiciones compuestas?</h3>
+        <p>a) Selecciona VERDADERO o FALSO.  </p>
+        <form id="form-parte2">
+            <label>
+                ¬ (p → ¬q)
+                <select id="valor-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label><br>
+            <label>
+                ¬p → ¬q
+                <select id="valor-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label><br>
+            <label>
+                p →q
+                <select id="valor-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label><br>
+            <label>
+                ¬p → q
+                <select id="valor-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label><br>
+            <label>
+                p → ¬q
+                <select id="valor-not-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label>
+        </form>
+        <button onclick="verificarParte2()">Verificar respuestas</button>
+        <p id="resultado-parte2"></p>
+    </section>
+    <!-- <div class="siguiente">
+    <a href="Ejercicios_p25_Condicional2.html">
+      <button>Ejercicios siguientes</button>
+  </a> </div> -->
+  <a href="../../Tablas/Condicional/condicional.html">
+  <button class="but">Ejercicio anterior</button>
+
+</a>
+  <a href="../../Páginas/10Condicional/Condicional.html"><button class="butt">Volver a la explicación</button></a>
+
+    <script src="Ejercicios_p25_Condicional.js"></script>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

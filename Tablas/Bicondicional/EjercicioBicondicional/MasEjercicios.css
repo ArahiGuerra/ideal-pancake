@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    
+    .drag-container {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .drop-zone {
+        width: 50px;
+        height: 20px;
+        border: 2px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .options {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    
+    .draggable {
+        padding: 10px;
+        background: #e7e7e7;
+        border-radius: 5px;
+        cursor: grab;
+    }
+    
+    .draggable:active {
+        cursor: grabbing;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #feedbackSymbol,
+    #feedbackTruthValues1,
+    #feedbackSymbol2,
+    #feedbackTruthValues2,
+    #feedbackSymbol3,
+    #feedbackTruthValues3 {
+        font-weight: bold;
+        color: red;
+    }
+    
+    #retrySymbol, 
+    #retryTruthValues1,
+    #retrySymbol2,
+    #retryTruthValues2,
+    #retrySymbol3,
+    #retryTruthValues3 {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: none;
+    }
+}

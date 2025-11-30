@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Proposiciones</title>
+    <link rel="stylesheet" href="Ejercicio_Adicional_Bicondicional_Y_Otros.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+    <div class="container">
+    <h1>Simbolización I</h1>
+
+<p>Arrastra al lado de cada enunciado la simbolización que le corresponde, tomando en cuenta que:
+
+    <br><b>p= ‘llovió’
+    
+    <br>q= ‘granizó’
+    
+    <br>r= ‘la cosecha se perdió’</b></p>    
+    <div id="proposiciones">
+        <div class="proposicion">
+            <p><strong>1.</strong> La cosecha se perdió si y sólo si se dio el caso de que haya granizado o de que no haya llovido.</p>
+            <div class="dropzone" data-correct="r ↔ q v ¬p"></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>2.</strong> La cosecha no se perdió si y sólo si es falso que se conjuntaran los hechos de que no llovió y de que granizó.</p>
+            <div class="dropzone" data-correct="¬r ↔ ¬(¬p ꓥ q)"></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>3.</strong> La cosecha no se perdió si y sólo si es falso que no llovió y es falso que granizó.</p>
+            <div class="dropzone" data-correct="¬r ↔ ¬(¬p) ꓥ ¬q"></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>4.</strong> Una de dos: o bien llovió y no granizó, o bien, la cosecha no se perdió; lo cual equivale a que la cosecha se perdió si y sólo si granizó o no llovió. </p>
+            <div class="dropzone" data-correct="p ꓥ ¬q ≠¬r ↔ (r↔ q v ¬p)"></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>5.</strong> Aunque granizó, la cosecha no se perdió, lo cual equivale a que es falso que si granizó entonces la cosecha se perdió. </p>
+            <div class="dropzone" data-correct="q ꓥ ¬r ↔ ¬(q →r)"></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>6.</strong>A pesar de que llovió y no granizó, la cosecha se perdió, lo cual equivale a que es falso que si llueve y no graniza entonces la cosecha no se pierde. </p>
+            <div class="dropzone" data-correct="p ꓥ ¬q ꓥ r ↔ ¬(p ꓥ ¬q → ¬r)"></div>
+        </div>
+
+    
+
+
+        
+    </div>
+
+    <h2>Respuestas</h2>
+    <div id="respuestas">
+        <div class="draggable" draggable="true">p ≠¬q ≠¬r ↔ (r↔ q v ¬p)</div>
+        <div class="draggable" draggable="true">¬r ↔ ¬(¬p) ꓥ ¬q</div>
+        <div class="draggable" draggable="true">q ꓥ ¬r ↔ ¬(q →r)</div>
+        <div class="draggable" draggable="true">p ꓥ ¬q → r ↔ ¬(p ꓥ ¬q → ¬r)</div>
+        <div class="draggable" draggable="true">r ↔ q v ¬p</div>
+        <div class="draggable" draggable="true">(r ↔ q) v ¬p</div>
+        <div class="draggable" draggable="true">p ꓥ ¬q ꓥ r ↔ ¬(p ꓥ ¬q → ¬r)</div>
+        <div class="draggable" draggable="true">¬r ↔ ¬(¬p ꓥ q)</div>
+        <div class="draggable" draggable="true">p ꓥ ¬q ≠¬r ↔ (r↔ q v ¬p)</div>
+    </div>
+
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+
+    <a href="../../Ejercicios hojas/Traducciones/EX_Traduccion_II_DeEspañolASimbolos/EX_Traduccion_II_DeEspañolASimbolos.html">
+  <button class="but">Ejercicio siguiente</button> </a>
+  <!-- <a href="../../../Ejercicios hojas/Pagina 22/Ejercicios_p22_Parentesis/Ejercicios_p22_Parentesis.html">
+  <button class="but">Ejercicio anterior</button> </a> -->
+  <a href="../../Páginas/13EjerciciosSimbolizacion/EjerciciosSimbolizacion.html">
+  <button class="butt">Volver a la explicación</button></a>
+    <script src="Ejercicio_Adicional_Bicondicional_Y_Otros.js"></script>
+    </div>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

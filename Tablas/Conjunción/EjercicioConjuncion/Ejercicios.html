@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simbolización básica de los operadores principales y sus valores veritativos</title>
+    <link rel="stylesheet" href="Ejercicios.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simbolización básica de los operadores principales y sus valores veritativos.</h2>
+
+        <!-- Sección 1: Simbolización de "A Pedro y a Ana les gustan las películas japonesas" -->
+        <div id="section1">
+            <p>Simboliza la siguiente oración (1): “A Pedro y a Ana les gustan las películas japonesas” donde:</p>
+            <p>P = a Pedro le gustan las películas japonesas. <br>
+            Q = a Ana le gustan las películas japonesas.</p>
+            <p>Arrastra la opción correcta para simbolizar la oración:</p>
+            <div class="drag-container">
+                <p>P</p><div class="drop-zone" id="drop-zone">_</div><p>Q</p>
+            </div>
+            <div class="options">
+                <div class="draggable" id="~" draggable="true">~</div>
+                <div class="draggable" id="V" draggable="true">V</div>
+                <div class="draggable" id="ꓥ" draggable="true">ꓥ</div>
+                <div class="draggable" id="≠" draggable="true">≠</div>
+            </div>
+            <button id="validateSymbol">Validar Simbolización</button>
+            <p id="feedbackSymbol"></p>
+            <button id="retrySymbol" style="display:none;">Reintentar</button>
+        </div>
+
+        <!-- Sección 2: Valores de verdad de la Sección 1 -->
+        <div id="section2" style="display:none;">
+            <h4>Condiciones veritativas</h4>
+            <p>¿Qué valor de verdad tendría (1) en los siguientes casos?</p>
+            <form id="truthValuesForm1">
+                <label for="case1">A Pedro sí le gustan las películas japonesas, pero a Ana no:</label>
+                <select name="case1" id="case1">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="case2">Ni a Pedro ni a Ana les gustan las películas japonesas:</label>
+                <select name="case2" id="case2">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="case3">A Ana le gustan las películas japonesas y a Pedro no:</label>
+                <select name="case3" id="case3">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="case4">Tanto a Pedro como a Ana les gustan las películas japonesas:</label>
+                <select name="case4" id="case4">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <button type="button" id="validateTruthValues1">Validar Valores de Verdad</button>
+            </form>
+            <p id="feedbackTruthValues1"></p>
+            <button id="retryTruthValues1" style="display:none;">Reintentar</button>
+        </div>
+        <script src="Ejercicios.js"></script>
+    </body>
+    </html>

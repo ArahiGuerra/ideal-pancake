@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disyunción Incluyente</title>
+  <link rel="stylesheet" href="Ejercicios_p21_fotocopias_DisyIncl.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Disyunción Incluyente (p v q)</h1>
+    <p><strong>Considerando que:</strong> p = Ana nació en México y q = Ana es hija de padres mexicanos.</p>
+
+    <section id="parteA">
+      <h2>Identificación de proposiciones</h2>
+      <p>Marca las casillas de los enunciados que podrían simbolizarse como <strong>p v q</strong>.</p>
+
+      <label><input type="checkbox" id="a1"> Ana nació en México y es hija de padres mexicanos.</label><br>
+      <label><input type="checkbox" id="a2"> Se da el caso de que Ana nació en México, o bien, es hija de padres mexicanos.</label><br>
+      <label><input type="checkbox" id="a3"> O bien Ana nació en México, o bien, es hija de padres mexicanos, o ambas cosas.</label><br>
+      <label><input type="checkbox" id="a4"> Ana nació en México, entonces es hija de padres mexicanos.</label><br>
+      <label><input type="checkbox" id="a5"> Ana nació en México o es hija de padres mexicanos.</label><br>
+      <label><input type="checkbox" id="a6"> Ana nació en México o es hija de padres mexicanos, pero no ambas cosas.</label><br>
+      <label><input type="checkbox" id="a7"> Ana nació en México, o bien, es hija de padres mexicanos, o ambas cosas.</label><br>
+
+      <button onclick="verificarParteA()">Verificar respuestas</button>
+      <p id="resultadoParteA"></p>
+    </section>
+
+
+    <section id="parteB">
+      <h2>Valores Veritativos</h2>
+      <p>Suponiendo que en la realidad Ana nació en México y es hija de padres mexicanos, selecciona el valor de verdad correcto para cada proposición.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Proposición compuesta</th>
+            <th>Verdadero</th>
+            <th>Falso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>(p v q)</td>
+            <td><input type="radio" name="b1" value="verdadero"></td>
+            <td><input type="radio" name="b1" value="falso"></td>
+          </tr>
+          <tr>
+            <td>¬(p v q)</td>
+            <td><input type="radio" name="b2" value="verdadero"></td>
+            <td><input type="radio" name="b2" value="falso"></td>
+          </tr>
+          <tr>
+            <td>(¬p v q)</td>
+            <td><input type="radio" name="b3" value="verdadero"></td>
+            <td><input type="radio" name="b3" value="falso"></td>
+          </tr>
+          <tr>
+            <td>(p v ¬q)</td>
+            <td><input type="radio" name="b4" value="verdadero"></td>
+            <td><input type="radio" name="b4" value="falso"></td>
+          </tr>
+          <tr>
+            <td>(¬p v ¬q)</td>
+            <td><input type="radio" name="b5" value="verdadero"></td>
+            <td><input type="radio" name="b5" value="falso"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button onclick="verificarParteB()">Verificar respuestas</button>
+      <p id="resultadoParteB"></p>
+    </section>
+  </div>
+
+  <a href="../../Pagina 22/Ejercicios_p22-I_Simbolización_Conj-DisyuncExcl_DisIncluyente/Ejercicios_p22-I_Simbolización_Conj-DisyuncExcl_DisIncluyente.html">
+  <button class="but">Ejercicio siguiente</button> </a>
+  <a href="../../../Tablas/D_Incluyente/dincluyente.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../Páginas/09DisyuncionIncluyente/DisyIncl.html">
+  <button class="butt">Volver a la explicación</button></a>
+
+  <script src="Ejercicios_p21_fotocopias_DisyIncl.js"></script>
+  <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

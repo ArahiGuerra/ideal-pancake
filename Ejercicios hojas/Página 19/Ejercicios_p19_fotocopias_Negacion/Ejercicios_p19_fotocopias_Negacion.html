@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Negación</title>
+    <link rel="stylesheet" href="Ejercicios_p19_fotocopias_Negacion.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+    <h1>Ejercicios de la Negación</h1>
+    <h2>Considerando que: p = 'Juan es lingüista'.</h2>
+
+    <section id="parte1">
+        <h3>a) Señala con una “X” cuáles de los siguientes enunciados podrían simbolizarse como: ¬p</h3>
+        <form id="form-parte1">
+            <label><input type="checkbox" value="0"> No creo que Juan sea lingüista.</label><br>
+            <label><input type="checkbox" value="1"> Juan no es lingüista.</label><br>
+            <label><input type="checkbox" value="2"> No se da el caso de que Juan sea lingüista.</label><br>
+            <label><input type="checkbox" value="3"> No es verdad que Juan sea lingüista.</label><br>
+            <label><input type="checkbox" value="4"> Quizá Juan sea lingüista.</label><br>
+            <label><input type="checkbox" value="5"> ¿Juan es lingüista?</label><br>
+            <label><input type="checkbox" value="6"> Es falso que Juan sea lingüista.</label><br>
+            <label><input type="checkbox" value="7"> Juan intentó ser lingüista.</label><br>
+        </form>
+        <button onclick="verificarParte1()">Verificar respuestas</button>
+        <p id="resultado-parte1"></p>
+    </section>
+
+    <section id="parte2">
+        <h3>b) Suponiendo el caso de que Juan sea lingüista, señala qué valor de verdad tendrían:</h3>
+        <form id="form-parte2">
+            <label>
+                p:
+                <select id="valor-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label><br>
+            <label>
+                ¬p:
+                <select id="valor-not-p">
+                    <option value="x">Seleccionar respuesta</option>
+                    <option value="verdadero">VERDADERO</option>
+                    <option value="falso">FALSO</option>
+                </select>
+            </label>
+        </form>
+        <button onclick="verificarParte2()">Verificar respuestas</button>
+        <p id="resultado-parte2"></p>
+    </section>
+
+<a href="../../../Tablas/Negación/Negación.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../Páginas/06Negacion/Negacion.html"><button class="butt">Volver a la explicación</button></a>
+
+
+  </div>
+
+    <script src="Ejercicios_p19_fotocopias_Negacion.js"></script>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+
+</body>
+</html>

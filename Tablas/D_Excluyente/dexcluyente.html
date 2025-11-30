@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Verdad: Disyunción Excluyente</title>
+  <link rel="stylesheet" href="dexcluyente.css">
+  <!-- Dragula CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Tabla de Verdad de la Disyunción Excluyente (P ≠ Q)</h1>
+    <p>Arrastra la respuesta correcta a la columna de la disyunción excluyente (P ≠ Q)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>P</th>
+          <th>Q</th>
+          <th>P ≠ Q</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td class="dropzone"></td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td class="dropzone"></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td class="dropzone"></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td class="dropzone"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="options">
+      <div class="draggable">V</div>
+      <div class="draggable">F</div>
+    </div>
+
+    <br>
+    <button id="check" onclick="checkAnswers()">Verificar Respuestas</button>
+    <button id="retry" style="display:none;" onclick="retry()">Reintentar</button>
+
+    <p id="message"></p>
+
+  </div>
+
+  <a href="../../Ejercicios hojas/Página 21/Ejercicios_p21_fotocopias_DisyExcluyente/Ejercicios_p21_fotocopias_DisyExcluyente.html">
+  <button class="but">Ejercicio siguiente</button>
+
+</a>
+  <a href="../../Páginas/08DisyuncionExcluyente/DisyExcl.html"><button class="butt">Volver a la explicación</button></a>
+
+  <!-- Dragula JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+  <script src="dexcluyente.js"></script>
+  <footer class="footer">
+      <img src="../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+
+</body>
+</html>

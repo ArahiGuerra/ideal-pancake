@@ -1,0 +1,300 @@
+footer, footer p {
+    text-align: center !important;
+line-height: 1.2;
+    margin: 4px 0;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+    text-decoration: underline;
+}
+
+.icn {
+     width: 500px;
+    height: auto;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    top: 0;
+    z-index: 100;
+}
+
+.container-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    padding-bottom: 3px;
+}
+
+.nav-header a:hover {
+    color: #5dade2;
+    border-bottom: 2px solid #5dade2;
+}
+
+/* Adaptable en pantallas pequeñas */
+@media (max-width: 700px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .columna {
+    width: 45%;
+  }
+  
+table {
+    width: 50%;
+  border-collapse: collapse;
+  margin-top: 10px;
+   margin: 20px auto;  /* 👈 centrado horizontal */
+  table-layout: fixed;   /* fuerza que todas las columnas respeten el ancho */
+}
+
+th, td {
+  border: 1px solid black;
+  width: 40px;   /* ancho fijo */
+  height: 40px;  /* alto fijo */
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;   /* oculta si algo se pasa */
+}
+
+/* Línea doble en tabla 1: entre q (2ª col) y p→q (3ª col) */
+table:first-of-type th:nth-child(2),
+table:first-of-type td:nth-child(2) {
+  border-right: 3px double black;
+}
+
+/* Línea doble en tabla 2: entre r (3ª col) y p ∧ q (4ª col) */
+table:nth-of-type(2) th:nth-child(3),
+table:nth-of-type(2) td:nth-child(3) {
+  border-right: 3px double black;
+}
+
+  
+  #resultadoParte1, #resultadoParte2, #resultadoParte3 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .but, .butt {
+  margin: 20px auto 0 auto; /* margen arriba y centrado horizontalmente */
+  padding: 10px 20px;
+  background-color: #bb5009; /* para .but, puedes mantener .butt con su color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block; /* para que el margin auto funcione y se centre */
+  outline: none; /* elimina la línea azul al hacer clic */
+}
+
+.but:hover {
+  background-color: #c77b18;
+}
+
+.butt {
+  background-color: #6e2f05;
+}
+
+.butt:hover {
+  background-color: #a8570c;
+}
+
+a {
+     text-decoration: none; 
+}
+
+
+  
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .column {
+    width: 48%;
+    text-align: left;
+  }
+  
+  .column h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4A90E2;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    width: 50px;
+    padding: 6px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button i {
+    margin-right: 8px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #result.correct {
+    color: #2E7D32;
+    background-color: #C8E6C9;
+  }
+  
+  #result.incorrect {
+    color: #C62828;
+    background-color: #FFCDD2;
+  }
+
+  .centrado {
+    text-align: center;
+  }
+
+  
+
+  

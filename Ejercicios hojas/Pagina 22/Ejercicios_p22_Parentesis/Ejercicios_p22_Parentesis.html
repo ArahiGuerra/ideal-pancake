@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerarquía de Operadores Lógicos</title>
+    <link rel="stylesheet" href="Ejercicios_p22_Parentesis.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div class="hola">Guía Práctica de Lógica</div>
+            <nav class="nav-header">
+                <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+                <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+                <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+                <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+                <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Jerarquía convencional de los operadores lógicos.</h1>
+        <p>Tomando en cuenta la jerarquía convencional de los operadores lógicos, indica en cuáles de las siguientes simbolizaciones los paréntesis son redundantes, de modo que se podrían omitir sin que por ello cambiara el sentido, y en cuáles casos los paréntesis son necesarios:</p>
+        
+        <form id="quizForm">
+            <div class="columns">
+                <div class="column">
+                    <div class="question" data-answer="REDUNDANTE">
+                        <p>1) (q ꓥ ¬r) ≠ p</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="NECESARIO">
+                        <p>2) ¬ (p v q)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="NECESARIO">
+                        <p>3) q ≠ ¬ (r ≠ p)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="REDUNDANTE">
+                        <p>4) q v (p ꓥ r)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="REDUNDANTE">
+                        <p>5) (p ꓥ q) ꓥ r</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="question" data-answer="NECESARIO">
+                        <p>6) (q ≠ p) ꓥ ¬r</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="REDUNDANTE">
+                        <p>7) q ≠ (p ꓥ ¬r)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="NECESARIO">
+                        <p>8) p ꓥ (¬q v r)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="NECESARIO">
+                        <p>9) r ≠ ¬ (q ꓥ ¬p)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                    <div class="question" data-answer="REDUNDANTE">
+                        <p>10) q ≠ ¬(p)</p>
+                        <button type="button" onclick="checkAnswer(this)">REDUNDANTE</button>
+                        <button type="button" onclick="checkAnswer(this)">NECESARIO</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <a href="../../Pagina 26/Ejercicios_p26_Bicondicional/Ejercicios_p26_Bicondicional.html">
+            <button class="but">Ejercicio siguiente</button>
+        </a>
+        <a href="../../../Páginas/12JerarquiaOperacionesSignosAgrupacion/JerarquiaOperacionesSA.html">
+            <button class="butt">Volver a la explicación</button>
+        </a>
+    </div>
+    
+    <script src="Ejercicios_p22_Parentesis.js"></script>
+    
+    <footer class="footer">
+        <img src="../../../asset/c.png" class="icn">
+        <p class="small">
+            El Colegio de México © 2025 / 
+            <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+                Aviso de privacidad
+            </a>
+        </p>
+        <p class="small">
+            Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+            se cite la fuente completa y su dirección electrónica.
+        </p>
+        <p>
+            De otra forma, requiere permiso previo por escrito de la institución.
+        </p>
+        <p class="small">Contacto:</p>
+    </footer>
+</body>
+</html>

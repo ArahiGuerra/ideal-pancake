@@ -1,0 +1,200 @@
+footer, footer p {
+    text-align: center !important;
+line-height: 1.2;
+    margin: 4px 0;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+    text-decoration: underline;
+}
+
+.icn {
+     width: 500px;
+    height: auto;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.main-header {
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    top: 0;
+    z-index: 100;
+}
+
+.container-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    padding-bottom: 3px;
+}
+
+.nav-header a:hover {
+    color: #5dade2;
+    border-bottom: 2px solid #5dade2;
+}
+
+/* Adaptable en pantallas pequeñas */
+@media (max-width: 700px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-header {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.but {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0a831c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block; 
+}
+.but:hover {
+  background-color: #45a06f;
+}
+
+a {
+  text-decoration: none; /* quita el subrayado */
+  color: inherit;        /* hace que el texto no sea azul */
+}
+
+.butt {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #07a73a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block; 
+}
+.butt:hover {
+  background-color: #3cb42c;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}

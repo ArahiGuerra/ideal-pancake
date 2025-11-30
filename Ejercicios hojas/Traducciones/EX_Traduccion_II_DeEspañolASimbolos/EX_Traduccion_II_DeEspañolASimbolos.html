@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simbolización I</title>
+    <link rel="stylesheet" href="EX_Traduccion_II_DeEspañolASimbolos.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+
+    <h1>Simbolización II</h1>
+
+    <div id="centro"><p>Simboliza las siguientes proposiciones tomando como elementos los que se encuentran a la derecha de la pantalla (puedes usar cada uno de ellos cuantas veces sea necesario):</p></div>
+
+    <table>
+    <td>
+    <div id="proposiciones">
+        <div class="proposicion">
+            <p><strong>a. Si Ana escribió el libro o el libro es una novela (o ambas cosas), entonces Juan lo leyó:</strong> </p>
+            <div class="dropzone" data-correct=""></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>b. Juan leyó el libro si y sólo si éste es una novela escrita por Ana:</strong> </p>
+            <div class="dropzone" data-correct=""></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>c. El libro es una novela, excepto si lo escribió Ana:</strong> </p>
+            <div class="dropzone" data-correct=""></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>d.</strong> Ana escribió el libro, o bien, si éste es una novela, entonces Juan lo leyó:</p>
+            <div class="dropzone" data-correct=""></div>
+        </div>
+
+        <div class="proposicion">
+            <p><strong>e. </strong> Aunque Ana escribió el libro, Juan lo leyó sólo si es una novela:</p>
+            <div class="dropzone" data-correct=""></div>
+        </div>
+    </div>
+    </td>
+    <td>
+    <h2>Respuestas</h2>
+    <div id="respuestas">
+        <!-- <div class="draggable" draggable="true">p</div> <p>(por: ‘Ana escribió el libro’)</p>
+        <div class="draggable" draggable="true">q</div> <p>(por: ‘El libro es una novela’)</p>
+        <div class="draggable" draggable="true">r</div> <p>(por: ‘Juan leyó el libro’)</p>
+        <div class="draggable" draggable="true">¬</div> <p>(Negación)</p> 
+        <div class="draggable" draggable="true">ꓥ</div> <p>(Conjunción)</p>
+        <div class="draggable" draggable="true">V</div> <p>(Disyunción incluyente)</p>
+        <div class="draggable" draggable="true">≠</div> <p>(Disyunción excluyente)</p>
+        <div class="draggable" draggable="true">→</div> <p>(Condicional)</p>
+        <div class="draggable" draggable="true">↔</div> <p>(Bicondicional)</p>
+        <div class="draggable" draggable="true">(</div>
+        <div class="draggable" draggable="true">)</div>
+        <div class="draggable" draggable="true">[</div>
+        <div class="draggable" draggable="true">]</div> -->
+
+        <table>
+            <tr>
+              <td><div class="draggable" draggable="true">p</div> <p>(por: ‘Ana escribió el libro’)</p></td>
+              <td><div class="draggable" draggable="true">¬</div> <p>(Negación)</p> </td>
+            </tr>
+            <tr>
+              <td><div class="draggable" draggable="true">q</div> <p>(por: ‘El libro es una novela’)</p></td>
+              <td><div class="draggable" draggable="true">ꓥ</div> <p>(Conjunción)</p></td>
+            </tr>
+            <tr>
+              <td><div class="draggable" draggable="true">r</div> <p>(por: ‘Juan leyó el libro’)</p></td>
+              <td><div class="draggable" draggable="true">V</div> <p>(Disyunción incluyente)</p></td>
+            </tr>
+            <tr>
+              <td><div class="draggable" draggable="true">≠</div> <p>(Disyunción excluyente)</p></td>
+              <td><div class="draggable" draggable="true">→</div> <p>(Condicional)</p></td>
+            </tr>
+            <tr>
+              <td><div class="draggable" draggable="true">↔</div> <p>(Bicondicional)</p></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><div class="draggable" draggable="true">(</div>
+                <div class="draggable" draggable="true">[</div></td>
+              <td> <div class="draggable" draggable="true">)</div>
+                <div class="draggable" draggable="true">]</div></td>
+            </tr>
+          </table>
+
+    </div>
+    </td>
+    </table>
+
+    <button onclick="verificar()">Verificar</button>
+    <p id="resultado"></p>
+
+
+        <a href="../EX_Traduccion_III_DeEspañolASimbolos/EX_Traduccion_III_DeEspañolASimbolos.html">
+  <button class="but">Ejercicio siguiente</button> </a>
+  <a href="../../Ejercicio_Adicional_Bicondicional_Y_Otros/Ejercicio_Adicional_Bicondicional_Y_Otros.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../Páginas/13EjerciciosSimbolizacion/EjerciciosSimbolizacion.html">
+  <button class="butt">Volver a la explicación</button></a>
+    <script src="EX_Traduccion_II_DeEspañolASimbolos.js"></script>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

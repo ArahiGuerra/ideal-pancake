@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simbolización y Valores de Verdad</title>
+    <link rel="stylesheet" href="MasEjercicios.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simbolización básica de los operadores principales y sus valores veritativos.</h2>
+
+         <!-- Sección 3: Simbolización de "A Pedro no le gustan las películas japonesas" -->
+         <div id="section3"">
+            <p>Suponiendo que:</p>
+            <p>P = Ana contrajo un virus mortal. <br>
+            Q = Ana está en peligro.</p>
+            <p>Simboliza el siguiente enunciado:   (5) Si Ana contrajo un virus mortal, entonces Ana está en peligro.</p>
+            <div class="options">
+                <div class="draggable" id="p → q" draggable="true">p → q</div>
+                <div class="draggable" id="-p" draggable="true">-p</div>
+                <div class="draggable" id="p ∧ p" draggable="true">p ∧ p</div>
+                <div class="draggable" id="p = p" draggable="true">p = p</div>
+            </div>
+            <div class="drag-container">
+                <div class="drop-zone" id="drop-zone2">_</div>
+            </div>
+            <button id="validateSymbol2">Validar Simbolización</button>
+            <p id="feedbackSymbol2"></p>
+            <button id="retrySymbol2" style="display:none;">Reintentar</button>
+        </div>
+
+        <!-- Sección 4: Valores de verdad de la Sección 3 -->
+        <div id="section4" style="display:none;">
+            <h4>Valores de Verdad</h4>
+            <p>Menciona qué valor de verdad tendría el enunciado (5) en los siguientes casos:</p>
+            <form id="truthValuesForm2">
+                <label for="case5">Ana contrajo un virus mortal pero no está en peligro: </label>
+                <select name="case5" id="case5">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="case6">Ana contrajo un virus mortal y está en peligro: </label>
+                <select name="case6" id="case6">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="caze5">Ana no contrajo un virus mortal y no está en peligro: </label>
+                <select name="caze5" id="caze5">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <label for="caze6">Ana no contrajo un virus mortal, pero está en peligro: </label>
+                <select name="caze6" id="caze6">
+                    <option value="null">Selecciona</option>
+                    <option value="T">V</option>
+                    <option value="F">F</option>
+                </select><br><br>
+
+                <button type="button" id="validateTruthValues2">Validar Valores de Verdad</button>
+            </form>
+            <p id="feedbackTruthValues2"></p>
+            <button id="retryTruthValues2" style="display:none;">Reintentar</button>
+        </div>
+
+    </div>
+    <script src="MasEjercicios.js"></script>
+</body>
+</html>

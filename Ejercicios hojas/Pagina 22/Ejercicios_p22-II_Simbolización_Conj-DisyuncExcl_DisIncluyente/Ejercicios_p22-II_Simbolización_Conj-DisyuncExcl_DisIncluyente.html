@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disyunción Excluyente y Disyunción Incluyente</title>
+  <link rel="stylesheet" href="Ejercicios_p22-II_Simbolización_Conj-DisyuncExcl_DisIncluyente.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+<div class="container">
+  <h1>Simbolización Disyunción Excluyente y Disyunción Incluyente</h1>
+  <p>Considerando que p=’Ana es abogada”, q=’Ana es lingüista’ y r=’Ana es mexicana’, arrastra la simbolización correcta a cada enunciado</p>
+  <table>
+    <td>
+      <div class="question-container">
+        <div class="question" id="q1">
+          <div class="drop-zone" data-correct="r ≠ p ꓥ q"></div>
+          <span>1. O bien Ana es mexicana, o bien, es abogada y lingüista.</span>
+        </div>
+        <div class="question" id="q2">
+          <div class="drop-zone" data-correct="¬(p v q)"></div>
+          <span>2. Es falso que Ana sea abogada o lingüista.</span>
+        </div>
+        <div class="question" id="q3">
+          <div class="drop-zone" data-correct="¬(p ꓥ q)"></div>
+          <span>3. Es falso que Ana sea abogada y lingüista.</span>
+        </div>
+        <div class="question" id="q4">
+          <div class="drop-zone" data-correct="r ꓥ (p ≠ q)"></div>
+          <span>4. Ana es mexicana y, o bien, es abogada, o bien, es lingüista (pero no ambas cosas).</span>
+        </div>
+        <div class="question" id="q5">
+          <div class="drop-zone" data-correct="p ꓥ r ≠ ¬r ꓥ q"></div>
+          <span>5. O bien Ana es abogada y mexicana, o bien, no es mexicana, pero sí lingüista.</span>
+        </div>
+        <div class="question" id="q6">
+          <div class="drop-zone" data-correct="r ꓥ ¬p v p ꓥ ¬q"></div>
+          <span>6. Ana es mexicana, pero no abogada; o bien, es abogada, pero no lingüista.</span>
+        </div>
+        <div class="question" id="q7">
+          <div class="drop-zone" data-correct="(p v q) ꓥ r"></div>
+          <span>7. Ana es abogada o lingüista. Además, es mexicana.</span>
+        </div>
+        <div class="question" id="q8">
+          <div class="drop-zone" data-correct="p ꓥ q ꓥ r ≠ ¬r"></div>
+          <span>8. O bien Ana es abogada, lingüista y mexicana, o bien, no es mexicana.</span>
+          
+        </div>
+      </div><br><br><button id="checkBtn">Verificar</button>
+      <p id="resultado"></p>
+    </td>
+    <td>
+      <div class="options">
+        <p>Simbolizaciones:</p>
+        <div class="option" draggable="true">¬(p ꓥ q)</div>
+        <div class="option" draggable="true">p ꓥ q ꓥ r ≠ ¬r</div>
+        <div class="option" draggable="true">(p ꓥ r ≠ ¬r) ꓥ q</div>
+        <div class="option" draggable="true">¬(p v q)</div>
+        <div class="option" draggable="true">r ꓥ ¬p v p ꓥ ¬q</div>
+        <div class="option" draggable="true">¬p v q</div>
+        <div class="option" draggable="true">p ꓥ r ≠ ¬r ꓥ q</div>
+        <div class="option" draggable="true">r ꓥ p ≠ q</div>
+        <div class="option" draggable="true">p v q ꓥ r</div>
+        <div class="option" draggable="true">(p v q) ꓥ r</div>
+        <div class="option" draggable="true">r ꓥ (p ≠ q)</div>
+        <div class="option" draggable="true">r ≠ p ꓥ q</div>
+        <div class="option" draggable="true">(p ꓥ q) ꓥ (r ≠ ¬r)</div>
+        <div class="option" draggable="true">(r ≠ p) ꓥ q</div>
+      </div>
+      
+    </td>
+  </table>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+<script src="Ejercicios_p22-II_Simbolización_Conj-DisyuncExcl_DisIncluyente.js"></script>
+<br>
+<a href="../../Pagina 26/Ejercicios_p26_Bicondicional/Ejercicios_p26_Bicondicional.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../Páginas/12JerarquiaOperacionesSignosAgrupacion/JerarquiaOperacionesSA.html">
+  <button class="butt">Volver a la explicación</button></a>
+  <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

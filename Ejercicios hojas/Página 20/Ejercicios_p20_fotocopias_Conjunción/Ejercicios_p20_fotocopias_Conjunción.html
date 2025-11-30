@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de Lógica Proposicional</title>
+  <link rel="stylesheet" href="Ejercicios_p20_fotocopias_Conjunción.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>La conjunción</h1>
+
+    <!-- Parte 1 -->
+    <section id="parte1">
+      <p>Considerando que: p=Juan es lingüista y q= Juan es tímido.</p>
+      <p>A) Da click en el cuadro correspondiente a los enunciados que podrían simbolizarse: p ꓥ q</p>
+      <label><input type="checkbox" id="respuesta0"> No es verdad que Juan sea lingüista y tímido.</label><br>
+      <label><input type="checkbox" id="respuesta1"> Juan es lingüista; sin embargo, es tímido.</label><br>
+      <label><input type="checkbox" id="respuesta2"> Creo que Juan es lingüista, pero es tímido.</label><br>
+      <label><input type="checkbox" id="respuesta3"> Juan es lingüista, pero es tímido.</label><br>
+      <label><input type="checkbox" id="respuesta4"> Juan es lingüista; no obstante, es tímido.</label><br>
+      <label><input type="checkbox" id="respuesta5"> Juan es lingüista. Además, es tímido.</label><br>
+      <button onclick="verificarParte1()">Verificar respuestas</button>
+      <p id="resultadoParte1"></p>
+    </section>
+
+    <!-- Parte 2 -->
+    <section id="parte2">
+      <p>B) Supongamos que en la realidad Juan es lingüista y es tímido, ¿cuáles serían los valores veritativos de las siguientes proposiciones compuestas?</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Proposición compuesta</th>
+            <th>Verdadero</th>
+            <th>Falso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>¬p ꓥ ¬q</td>
+            <td><input type="radio" name="parte2_1" value="verdadero"></td>
+            <td><input type="radio" name="parte2_1" value="falso"></td>
+          </tr>
+          <tr>
+            <td>p ꓥ q</td>
+            <td><input type="radio" name="parte2_2" value="verdadero"></td>
+            <td><input type="radio" name="parte2_2" value="falso"></td>
+          </tr>
+          <tr>
+            <td>¬p ꓥ q</td>
+            <td><input type="radio" name="parte2_3" value="verdadero"></td>
+            <td><input type="radio" name="parte2_3" value="falso"></td>
+          </tr>
+          <tr>
+            <td>p ꓥ ¬q</td>
+            <td><input type="radio" name="parte2_4" value="verdadero"></td>
+            <td><input type="radio" name="parte2_4" value="falso"></td>
+          </tr>
+          <tr>
+            <td>q ꓥ p</td>
+            <td><input type="radio" name="parte2_5" value="verdadero"></td>
+            <td><input type="radio" name="parte2_5" value="falso"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="verificarParte2()">Verificar respuestas</button>
+      <p id="resultadoParte2"></p>
+    </section>
+
+    <!-- Parte 3 -->
+    <section id="parte3">
+      <p>C) Relaciona las dos columnas, anotando el número de la proposición compuesta en los paréntesis de su respectiva simbolización:</p>
+      
+      <div class="columns">
+        <div class="column">
+          <h2>Proposiciones</h2>
+          <ul>
+            <li>1.	Es falso que Juan es lingüista y tímido.</li><br>
+            <li>2.	A pesar de ser tímido, Juan es lingüista.</li><br>
+            <li>3.	No es verdad que Juan sea lingüista y tampoco que sea tímido.</li><br>
+            <li>4.	Juan es lingüista, pero no es tímido</li><br>
+            <li>5.	Si bien Juan no es lingüista, es verdad que es tímido</li><br>
+          </ul>
+        </div>
+  
+        <div class="column">
+          <h2>Simbolizaciones</h2>
+          <form id="quiz-form">
+            <ul>
+              <li>   <input type="text" id="answer-1" maxlength="1"> p ꓥ ¬ q </li>
+              <li> <input type="text" id="answer-2" maxlength="1"> ¬ (p ꓥ q) </li>
+              <li>   <input type="text" id="answer-3" maxlength="1"> ¬ p ꓥ q </li>
+              <li>  <input type="text" id="answer-4" maxlength="1"> ¬ p ꓥ ¬ q </li>
+              <li>     <input type="text" id="answer-5" maxlength="1"> p ꓥ q</li>
+            </ul>
+            <button type="button" onclick="checkAnswers()"><i class="fas fa-check"></i> Verificar respuestas</button>
+          </form>
+        </div>
+      </div>
+  
+      <div id="result"></div>
+    </div>
+
+      <a href="../../../Tablas/Conjunción/conjuncion.html">
+  <button class="but">Ejercicio anterior</button>
+
+</a>
+  <a href="../../../Páginas/07Conjuncion/Conjuncion.html"><button class="butt">Volver a la explicación</button></a>
+
+
+  
+    <script src="Ejercicios_p20_fotocopias_Conjunción.js"></script>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+  </body>
+  </html>
+  

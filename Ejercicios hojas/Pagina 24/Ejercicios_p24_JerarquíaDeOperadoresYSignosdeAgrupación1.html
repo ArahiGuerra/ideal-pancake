@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerarquía de operadores y de signos de agrupación.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.css">
+    <link rel="stylesheet" href="Ejercicios_p24_JerarquíaDeOperadoresYSignosdeAgrupación1.css">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+
+    <div class="container">
+        <h1>Jerarquía de operadores y de signos de agrupación.</h1>
+        <p>Tomando en cuenta la jerarquía convencional de los operadores y de los signos de agrupación, arrastra cada simbolización junto a la proposición que le corresponde, suponiendo que las proposiciones simples están representadas por las siguientes letras:</p>
+        <p>p= ‘Ana está enferma’<br>
+            q= ‘Ana tiene clase de guitarra’<br>
+            r= ‘Ana está en su casa’<br>
+            s= ‘Lo que dijo Juan es verdad’<br>
+            </p>
+
+<table>
+    <td>
+    
+        <div class="question-container">
+            <div class="question" id="q1">
+                <div class="drop-zone" data-correct="p v q → (r ↔s)"></div><span>1. Si Ana está enferma o tiene clase de guitarra (o ambas cosas) entonces el que Ana esté en su casa equivale a que lo que dijo Juan es verdad.</span>
+            </div>
+            <div class="question" id="q2">
+                <div class="drop-zone" data-correct="¬(p v q) → (r ↔s)"></div><span>2. Si es falso que Ana esté enferma o tenga clase de guitarra, entonces el que Ana esté en su casa equivale a que lo que dijo Juan es verdad.</span>
+            </div>
+            <div class="question" id="q3">
+                <div class="drop-zone" data-correct="¬(p ꓥ ¬r) → ¬ [(r ꓥ q) ↔ s]"></div><span>3. Si es falso que Ana esté enferma y no esté en su casa, entonces es falso que el que Ana esté en su casa y tenga clase de guitarra equivalga a que lo que dijo Juan es verdad.</span>
+            </div>
+            <div class="question" id="q4">
+                <div class="drop-zone" data-correct="¬p ꓥ ¬r → ¬ r ꓥ (q ↔ s)"></div><span>4. Si Ana no está enferma y no está en su casa, entonces es verdad que no está en su casa y también es cierto que Ana tiene clase de guitarra si y sólo si lo que dijo Juan es verdad.</span>
+            </div>
+        </div>
+    </td>
+    <td>
+
+        <div class="options">
+            <p>Simbolizaciones:</p>
+            <div class="option" draggable="true">¬[(p v q) → (r ↔s)]</div>
+            <div class="option" draggable="true">¬p ꓥ ¬r → ¬ r ꓥ (q ↔ s)</div>
+            <div class="option" draggable="true">¬(p v q) → (r ↔s)</div>
+            <div class="option" draggable="true">p v q → (r ↔s)</div>
+            <div class="option" draggable="true">¬(p ꓥ ¬r) → ¬ [(r ꓥ q) ↔ s]</div>
+            
+        </div>
+    </div>
+</td>
+</table>
+
+<a href="../Pagina 24/Ejercicios_p24_JerarquíaDeOperadoresYSignosdeAgrupación2.html">
+  <button class="but">Ejercicio siguiente</button>
+<a href="../Pagina 24/Ejercicios_p24_JerarquíaDeOperadoresYSignosdeAgrupación.html">
+  <button class="but">Ejercicio anterior</button>
+
+</a>
+  <a href="../../Páginas/12JerarquiaOperacionesSignosAgrupacion/JerarquiaOperacionesSA.html"><button class="butt">Volver a la explicación</button></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js"></script>
+    <script src="Ejercicios_p24_JerarquíaDeOperadoresYSignosdeAgrupación1.js"></script>
+    
+</div>
+    <footer class="footer">
+      <img src="../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+</body>
+</html>

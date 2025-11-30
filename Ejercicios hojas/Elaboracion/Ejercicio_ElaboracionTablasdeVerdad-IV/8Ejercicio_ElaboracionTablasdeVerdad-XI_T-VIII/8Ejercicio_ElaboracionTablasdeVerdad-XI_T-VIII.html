@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas de Verdad</title>
+  <link rel="stylesheet" href="8Ejercicio_ElaboracionTablasdeVerdad-XI_T-VIII.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Elaboración Tablas de Verdad </h1>
+
+<p>1. Observa la siguiente tabla de verdad, en la cual hemos numerado cada una de las columnas, para poder referirnos más fácilmente a ellas. Asimismo, en la columna 1 de la tabla presentamos ya los valores que puede adquirir la única proposición simple que interviene en este esquema lógico:</p>
+<div class="tablav">
+    <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>p</th>
+          <th>↔</th>
+          <th>(p</th> 
+          <th>ꓥ</th>
+          <th>p)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="centrado"><p>[Tabla VIII]</p></div>
+    </div>
+    
+
+    <p id="instruccion">
+    </p>
+  
+    <!-- Segunda tabla -->
+    <div id="tablaAntigua">
+      <p>      1.1. Coloca directamente en la tabla, que copiamos a continuación, los valores correspondientes a las columnas 2, 4 y 6.
+</p>
+    <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>p</th>
+          <th>↔</th>
+          <th>(p</th> 
+          <th>ꓥ</th>
+          <th>p)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td><input type="text" id="x1" class="input-box" maxlength="1"></td>
+          <td></td>
+          <td><input type="text" id="x2" class="input-box" maxlength="1"></td>
+          <td></td>
+          <td><input type="text" id="x3" class="input-box" maxlength="1"></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td><input type="text" id="x4" class="input-box" maxlength="1"></td>
+          <td></td>
+          <td><input type="text" id="x5" class="input-box" maxlength="1"></td>
+          <td></td>
+          <td><input type="text" id="x6" class="input-box" maxlength="1"></td>
+        </tr>
+      </tbody>
+    </table>
+      <button onclick="verificarSegundaTabla()">Verificar</button>
+      <button onclick="reiniciarSegundaTabla()">Reintentar</button>
+      <p id="resultado2"></p>
+    </div>
+  
+    <!-- Tercera tabla -->
+    <div id="tablaNueva" style="display: none;">
+      <p>1.2. ¿Cuál sería la siguiente columna por resolver en la tabla VIII? Coloca a continuación los valores que le corresponden.</p>
+      <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>p</th>
+          <th>↔</th>
+          <th>(p</th> 
+          <th>ꓥ</th>
+          <th>p)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td></td>
+          <td>V</td>
+          <td><input type="text" id="b1" class="input-box" maxlength="1"></td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td></td>
+          <td>F</td>
+          <td><input type="text" id="b2" class="input-box" maxlength="1"></td>
+          <td>F</td>
+        </tr>
+      </tbody>
+    </table>
+
+      <button onclick="verificarTerceraTabla()">Verificar</button>
+      <button onclick="reiniciarTerceraTabla()">Reintentar</button>
+      <p id="resultado3"></p>
+    </div>
+
+    <div id="tablaCuarta" style="display: none;">
+      <p>1.3. Ahora ya sólo falta el último paso: resolver la columna correspondiente a la operación principal. Anota los valores para esa columna:</p>
+     <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>p</th>
+          <th>↔</th>
+          <th>(p</th> 
+          <th>ꓥ</th>
+          <th>p)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td><input type="text" id="c1" class="input-box" maxlength="1"></td>
+          <td>V</td>
+          <td>V</td>
+          <td>V</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td><input type="text" id="c2" class="input-box" maxlength="1"></td>
+          <td>F</td>
+          <td>F</td>
+          <td>F</td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <button onclick="verificarCuartaTabla()">Verificar</button>
+      <button onclick="reiniciarCuartaTabla()">Reintentar</button>
+      <p id="resultado4"></p>
+    </div>
+
+    <div id="tablaFinal" style="display: none;">
+      <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>p</th>
+          <th>↔</th>
+          <th>(p</th> 
+          <th>ꓥ</th>
+          <th>p)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <button onclick="verificarTablaFinal()">Verificar</button>
+      <button onclick="reiniciarTablaFinal()">Reintentar</button>
+      <p id="resultadoFinal"></p>
+    </div>
+    
+    <a href="../9Ejercicio_ElaboracionTablasdeVerdad-XI_T-IX/9Ejercicio_ElaboracionTablasdeVerdad-XI_T-IX.html">
+  <button class="but">Ejercicio siguiente</button> </a>
+  <a href="../7Ejercicio_ElaboracionTablasdeVerdad-X_T-VII/7Ejercicio_ElaboracionTablasdeVerdad-X_T-VII.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../../Páginas/14TablasVerdad/TablasVerdad.html">
+  <button class="butt">Volver a la explicación</button></a>
+  
+    <script src="8Ejercicio_ElaboracionTablasdeVerdad-XI_T-VIII.js"></script>
+        </div>
+    <footer class="footer">
+      <img src="../../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+  </body>
+  </html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas de Verdad</title>
+  <link rel="stylesheet" href="12Ejercicio_ElaboraTVerdad_T-XII.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container-header">
+      <div class="hola">Guía Práctica de Lógica</div>
+      <nav class="nav-header">
+        <a href="../../../../Páginas/INDEX/index.html">Inicio</a>
+        <!-- <a href="../02OposicionProposiciones/OposicionProposiciones.html">Oposición</a>
+        <a href="../03LeyesVerdad/LeyesVerdad.html">Leyes</a>
+        <a href="../04ProposicionesCompuestas/Proposiciones.html">Proposiciones</a>
+        <a href="../05TablasVerdad/Tablas.html">Tablas de verdad</a> -->
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Elaboración Tablas de Verdad</h1>
+
+    <p>1. Observa la siguiente tabla de verdad, en la cual hemos numerado cada una de las columnas, para poder referirnos más fácilmente a ellas. Asimismo, en las columnas 1 y 2 de la tabla presentamos ya las distintas combinaciones de valores que pueden adquirir las proposiciones simples que intervienen en este esquema lógico:</p>
+
+<div class="tablav">
+    <table border="1" cellspacing="2" cellpadding="10">
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <th>10</th>
+        </tr>
+        <tr>
+          <th>p</th>
+          <th>q</th>
+          <th>¬</th>
+          <th>(p</th> 
+          <th>V</th>
+          <th>q)</th>
+          <th>↔</th>
+          <th>(¬p</th>
+          <th>ꓥ</th>
+          <th>¬q)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>V</td>
+          <td>V</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>F</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>V</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+           <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>F</td>
+          <td></td>
+           <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="centrado"><p>[Tabla XII]</p></div>
+    </div>
+    
+    <p>1.1. ¿Qué columnas es necesario tomar en cuenta para determinar los valores de las
+      siguientes columnas? Escribe, en cada caso, el/los número(s) de la(s)
+      columna(s) correspondientes:</p>
+   
+    <form id="formulario">
+      <div class="pregunta">
+        <strong>Columna 3:</strong> 
+        <input type="text" id="col3" class="input-box" >
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 4:</strong> 
+        <input type="text" id="col4" class="input-box" >
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 5:</strong> 
+        <input type="text" id="col5_1" class="input-box" maxlength="2"> y 
+        <input type="text" id="col5_2" class="input-box" maxlength="2">
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 6:</strong> 
+        <input type="text" id="col6" class="input-box" maxlength="2">
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 7:</strong> 
+        <input type="text" id="col7_1" class="input-box" maxlength="2"> y 
+        <input type="text" id="col7_2" class="input-box" maxlength="2">
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 8:</strong> 
+        <input type="text" id="col8" class="input-box" maxlength="2">
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 9:</strong> 
+        <input type="text" id="col9_1" class="input-box" maxlength="2"> y 
+        <input type="text" id="col9_2" class="input-box" maxlength="2">
+      </div>
+
+      <div class="pregunta">
+        <strong>Columna 10:</strong> 
+        <input type="text" id="col10" class="input-box" maxlength="2">
+      </div>
+
+      <button type="button" onclick="verificar()">Verificar</button>
+      <p id="resultado"></p>
+    </form>
+  
+    <br>
+
+    <p id="instruccion">
+      
+    </p>
+  
+    <!-- Segunda tabla -->
+    <div id="tablaAntigua">
+      <p>1.2. Coloca directamente en la tabla XII, que copiamos a continuación, los valores
+      correspondientes a las columnas 3, 5, 7 y 9.</p>
+      <table border="1" cellspacing="2" cellpadding="10">
+        <thead>
+          <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th>
+            <th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+          </tr>
+          <tr>
+         <th>p</th>
+          <th>q</th>
+          <th>¬</th>
+          <th>(p</th> 
+          <th>V</th>
+          <th>q)</th>
+          <th>↔</th>
+          <th>(¬p</th>
+          <th>ꓥ</th>
+          <th>¬q)</th>
+        </tr>
+        </thead>
+        <tbody>  
+          <tr>
+            <td>V</td><td>V</td><td></td>
+            <td><input type="text" id="x1" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x2" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x3" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x4" class="input-box" maxlength="1"></td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td></td>
+            <td><input type="text" id="x5" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x6" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x7" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x8" class="input-box" maxlength="1"></td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td></td>
+            <td><input type="text" id="x9" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x10" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x11" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x12" class="input-box" maxlength="1"></td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td></td>
+            <td><input type="text" id="x13" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x14" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x15" class="input-box" maxlength="1"></td>
+            <td></td>
+            <td><input type="text" id="x16" class="input-box" maxlength="1"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="verificarSegundaTabla()">Verificar</button>
+      <button onclick="reiniciarSegundaTabla()">Reintentar</button>
+      <p id="resultado2"></p>
+    </div>
+  
+    <!-- Tercera tabla -->
+    <div id="tablaNueva" style="display: none;">
+      <p>1.3. ¿Cuáles son las siguientes dos columnas que hay que resolver en la Tabla XII? Anota los valores que les corresponden a esas dos columnas:</p>
+      <table border="1" cellspacing="2" cellpadding="10">
+        <thead>
+          <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th>
+            <th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+          </tr>
+         <tr>
+          <th>p</th>
+          <th>q</th>
+          <th>¬</th>
+          <th>(p</th> 
+          <th>V</th>
+          <th>q)</th>
+          <th>↔</th>
+          <th>(¬p</th>
+          <th>ꓥ</th>
+          <th>¬q)</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>V</td>
+            <td>V</td>
+            <td></td>
+            <td>V</td>
+            <td><input type="text" maxlength="1" id="b1" class="input-box"></td>
+            <td>V</td>
+            <td></td>
+            <td>F</td>
+            <td><input type="text" maxlength="1" id="b2" class="input-box"></td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td></td><td>V</td>
+            <td><input type="text" maxlength="1" id="b3" class="input-box"></td>
+            <td>F</td><td></td><td>F</td><td><input type="text" maxlength="1" id="b4" class="input-box"></td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td></td><td>F</td>
+            <td><input type="text" maxlength="1" id="b5" class="input-box"></td>
+            <td>V</td><td></td><td>V</td><td><input type="text" maxlength="1" id="b6" class="input-box"></td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td></td><td>F</td>
+            <td><input type="text" maxlength="1" id="b7" class="input-box"></td>
+            <td>F</td><td></td><td>V</td><td><input type="text" maxlength="1" id="b8" class="input-box"></td><td>V</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <button onclick="verificarTerceraTabla()">Verificar</button>
+      <button onclick="reiniciarTerceraTabla()">Reintentar</button>
+      <p id="resultado3"></p>
+    </div>
+
+    <div id="tablaCuarta" style="display: none;">
+      <p>1.4. Ya has avanzado mucho en la solución de esta tabla. ¿Cuál es la siguiente columna que hay que resolver? Anota los valores que le corresponden a esa columna:</p>
+      <table border="1" cellspacing="2" cellpadding="10">
+        <thead>
+          <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th>
+            <th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+          </tr>
+          <tr>
+          <th>p</th>
+          <th>q</th>
+          <th>¬</th>
+          <th>(p</th> 
+          <th>V</th>
+          <th>q)</th>
+          <th>↔</th>
+          <th>(¬p</th>
+          <th>ꓥ</th>
+          <th>¬q)</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr> 
+            <td>V</td><td>V</td><td><input type="text" maxlength="1" id="c1" class="input-box"></td><td>V</td>
+            <td>V</td><td>V</td><td></td>
+            <td>F</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td><input type="text" maxlength="1" id="c2" class="input-box"></td><td>V</td>
+            <td>V</td><td>F</td><td></td>
+            <td>F</td><td>F</td><td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td><input type="text" maxlength="1" id="c3" class="input-box"></td><td>F</td>
+            <td>V</td><td>V</td><td></td>
+            <td>V</td><td>F</td><td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td><input type="text" maxlength="1" id="c4" class="input-box"></td><td>F</td>
+            <td>F</td><td>F</td><td></td>
+            <td>V</td><td>V</td><td>V</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <button onclick="verificarCuartaTabla()">Verificar</button>
+      <button onclick="reiniciarCuartaTabla()">Reintentar</button>
+      <p id="resultado4"></p>
+    </div>
+
+    <div id="tablaFinal" style="display: none;">
+      <p>1.5. Ahora ya sólo falta el último paso: resolver la columna correspondiente a la operación principal. Anota los valores para esa columna:</p>
+      <table border="1" cellspacing="2" cellpadding="10">
+        <thead>
+          <tr>
+            <th>1</th><th>2</th><th>3</th><th>4</th>
+            <th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+          </tr>
+          <tr>
+          <th>p</th>
+          <th>q</th>
+          <th>¬</th>
+          <th>(p</th> 
+          <th>V</th>
+          <th>q)</th>
+          <th>↔</th>
+          <th>(¬p</th>
+          <th>ꓥ</th>
+          <th>¬q)</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>V</td><td>V</td><td>F</td><td>V</td>
+            <td>V</td><td>V</td><td><input type="text" maxlength="1" id="y1" class="input-box"></td><td>F</td><td>F</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>V</td><td>F</td><td>F</td><td>V</td>
+            <td>V</td><td>F</td><td><input type="text" maxlength="1" id="y2" class="input-box"></td><td>F</td><td>F</td>
+            <td>V</td>
+          </tr>
+          <tr>
+            <td>F</td><td>V</td><td>F</td><td>F</td>
+            <td>V</td><td>V</td><td><input type="text" maxlength="1" id="y3" class="input-box"></td><td>V</td><td>F</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>F</td><td>F</td><td>V</td><td>F</td>
+            <td>F</td><td>F</td><td><input type="text" maxlength="1" id="y4" class="input-box"></td><td>V</td><td>V</td>
+            <td>V</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <button onclick="verificarTablaFinal()">Verificar</button>
+      <button onclick="reiniciarTablaFinal()">Reintentar</button>
+      <p id="resultadoFinal"></p>
+    </div>
+    
+    <a href="../13Ejercicio_ElaboraTVerdad_T-XIII/13Ejercicio_ElaboraTVerdad_T-XIII.html">
+  <button class="but">Ejercicio siguiente</button> </a>
+  <a href="../11Ejercicio_ElaboraTVerdad_T-XI.html/11Ejercicio_ElaboraTVerdad_T-XI.html">
+  <button class="but">Ejercicio anterior</button> </a>
+  <a href="../../../../Páginas/14TablasVerdad/TablasVerdad.html">
+  <button class="butt">Volver a la explicación</button></a>
+  
+    <script src="12Ejercicio_ElaboraTVerdad_T-XII.js"></script>
+        </div>
+    <footer class="footer">
+      <img src="../../../../asset/c.png" class="icn">
+    <p class="small">
+        El Colegio de México © 2025 / 
+        <a href="https://transparencia.colmex.mx/proteccion-de-datos-personales/">
+            Aviso de privacidad
+        </a>
+    </p>
+
+    <p class="small">
+        Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile,
+        se cite la fuente completa y su dirección electrónica. </p>
+        <p>De otra forma, requiere permiso
+        previo por escrito de la institución.
+    </p>
+
+    <p class="small">Contacto:</p>
+</footer>
+  </body>
+  </html>
