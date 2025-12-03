@@ -60,3 +60,7 @@ button:hover {
   font-weight: bold;
   text-align: center;
 }
+
+footer .small {
+    line-height: 2.5;  
+}

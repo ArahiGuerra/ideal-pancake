@@ -75,3 +75,7 @@ button:hover {
     font-size: 1.2em;
     margin-top: 20px;
 }
+
+footer .small {
+    line-height: 2.5;  
+}
