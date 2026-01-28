@@ -36,7 +36,8 @@ footer .small {
 }
 
 .icn {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: auto;
 }
 
