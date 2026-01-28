@@ -18,30 +18,72 @@ h2 {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
+/* FOOTER */
 footer {
   font-size: 1.1rem;
   line-height: 2.5;
 }
 footer a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-
+footer .small {
+  line-height: 2.5;
+}
 
 .icn {
-     width: 900px;
-    height: auto;
+  width: 900px;
+  height: auto;
 }
 
-section {
-  scroll-margin-top: 80px;
-}
-
-footer .small {
-    line-height: 2.5;  
-}
-
-.logo  img{
-
+.logo img {
   width: 35px;
 }
+
+
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* COLORES */
+.btn-outline-azul { color:#0d6efd; border-color:#0d6efd; }
+.btn-outline-azul:hover { background:#0d6efd; color:white; }
+
+.btn-outline-morado { color:#9b34db; border-color:#9b34db; }
+.btn-outline-morado:hover { background:#9b34db; color:white; }
+
+.btn-outline-verde { color:#07a73a; border-color:#07a73a; }
+.btn-outline-verde:hover { background:#07a73a; color:white; }
+
+.btn-outline-marino { color:#071276; border-color:#071276; }
+.btn-outline-marino:hover { background:#071276; color:white; }
+
+.btn-outline-rojo { color:#b71414; border-color:#b71414; }
+.btn-outline-rojo:hover { background:#b71414; color:white; }
+
+.btn-outline-naranja { color:#b74514; border-color:#b74514; }
+.btn-outline-naranja:hover { background:#b74514; color:white; }
+
+.btn-outline-amarillo { color:#b7af14; border-color:#b7af14; }
+.btn-outline-amarillo:hover { background:#b7af14; color:white; }
+
+.btn-outline-verde-claro { color:#32b714; border-color:#32b714; }
+.btn-outline-verde-claro:hover { background:#32b714; color:white; }
+
+.btn-outline-turquesa { color:#14b7a9; border-color:#14b7a9; }
+.btn-outline-turquesa:hover { background:#14b7a9; color:white; }
+
+.btn-outline-rosa { color:#b71489; border-color:#b71489; }
+.btn-outline-rosa:hover { background:#b71489; color:white; }
+
+.btn-outline-rey { color:#3214b7; border-color:#3214b7; }
+.btn-outline-rey:hover { background:#3214b7; color:white; }
