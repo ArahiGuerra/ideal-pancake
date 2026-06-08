@@ -41,7 +41,7 @@
           <li>4.	No es verdad que Juan no haya estudiado, pero lo que es cierto es que, si no aprobó el examen, entonces no ganó la beca.</li><br>
           <li>5.	Es falso que Juan no estudió y también es falso que, si no aprobó el examen, no ganó la beca.</li><br>
           <li>6.	O Juan estudió, o no estudió. Si no estudió, entonces ni aprobó el examen, ni ganó la beca.</li><br>
-          <li>7.	O Juan estudió, o no estudió, y si no estudió, ni aprobó el examen, no ganó la beca.</li><br>
+          <li>7.	O Juan estudió, o no estudió, y si no estudió ni tampoco aprobó el examen, entonces no ganó la beca.</li><br>
 
         </ul>
       </div>
@@ -51,18 +51,18 @@
         <form id="quiz-form">
           <ul>
             <li>(¬p ≠p) →(¬q →¬r)  <input type="text" id="answer-1" maxlength="1"> </li>
-            <li>p ≠ ¬p ꓥ (¬p →¬q ꓥ ¬r)  <input type="text" id="answer-2" maxlength="1"> </li>
+            <li>(p ≠ ¬p) ꓥ (¬p →¬q ꓥ ¬r) <input type="text" id="answer-2" maxlength="1"> </li>
             <li>¬p ≠(p ꓥ¬q) →¬r  <input type="text" id="answer-3" maxlength="1"> </li>
             <li>¬p ≠ p → (¬q →¬r)  <input type="text" id="answer-4" maxlength="1"> </li>
             <li>¬p v (q →r)  <input type="text" id="answer-5" maxlength="1"> </li>
             <li>¬p ≠ (p →¬q) →¬r  <input type="text" id="answer-6" maxlength="1"> </li>
             <li>p ≠ ¬p ꓥ ¬p ꓥ ¬q → ¬r  <input type="text" id="answer-7" maxlength="1"> </li>
-            <li>p ≠ ¬p ꓥ (¬p ꓥ ¬q → ¬r)  <input type="text" id="answer-8" maxlength="1"> </li>
-            <li>¬p ꓥ ¬ (¬q →¬r)  <input type="text" id="answer-9" maxlength="1"> </li>
+            <li>(p ≠ ¬p) ꓥ (¬p ꓥ ¬q → ¬r) <input type="text" id="answer-8" maxlength="1"> </li>
+            <li>¬¬p ꓥ ¬ (¬q → ¬r)  <input type="text" id="answer-9" maxlength="1"> </li>
             <li>p ꓥ (q →r)  <input type="text" id="answer-10" maxlength="1"> </li>
             <li>¬ (p v q →r)  <input type="text" id="answer-11" maxlength="1"> </li>
             <li>p ꓥ q →r  <input type="text" id="answer-12" maxlength="1"> </li>
-            <li>¬p ꓥ ¬q →¬r  <input type="text" id="answer-13" maxlength="1"> </li>
+            <li>¬¬p ꓥ (¬q → ¬r)  <input type="text" id="answer-13" maxlength="1"> </li>
           </ul>
           <button type="button" onclick="checkAnswers()"><i class="fas fa-check"></i> Verificar respuestas</button>
         </form>
