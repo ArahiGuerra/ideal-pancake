@@ -209,7 +209,20 @@ a {
 }
 
 .draggable .a {
-    background-color: #27ae60; /* verde */
+    background-color: #ae2727; /* rojo */
+}
+
+
+.roj {
+    color: #ae2727;
+}
+
+.az {
+    color: #2980b9;
+}
+
+.ver {
+    color: #44ad4d;
 }
 
 .draggable .aa {
@@ -217,7 +230,7 @@ a {
 }
 
 .draggable .aaa {
-    background-color: #8e44ad; /* morado */
+    background-color: #44ad4d; /* morado */
 }
 
 .draggable {

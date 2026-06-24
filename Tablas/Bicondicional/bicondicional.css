@@ -176,7 +176,7 @@ th, td {
 .but, .butt {
   margin: 20px auto 0 auto; /* margen arriba y centrado horizontalmente */
   padding: 10px 20px;
-  background-color: #6b008b; /* para .but, puedes mantener .butt con su color */
+  background-color: #bb09b2; /* para .but, puedes mantener .butt con su color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -188,7 +188,7 @@ th, td {
 }
 
 .but:hover {
-  background-color: #b33236;
+  background-color: #c718aa;
 }
 
 .butt {
